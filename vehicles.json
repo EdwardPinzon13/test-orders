@@ -1,0 +1,350 @@
+[{
+        "model": "vehicles.brand",
+        "pk": 1,
+        "fields": {
+            "brand_name": "Mazda"
+        }
+    },
+    {
+        "model": "vehicles.brand",
+        "pk": 2,
+        "fields": {
+            "brand_name": "Renault"
+        }
+    },
+    {
+        "model": "vehicles.brand",
+        "pk": 3,
+        "fields": {
+            "brand_name": "Chevrolet"
+        }
+    },
+    {
+        "model": "vehicles.brand",
+        "pk": 4,
+        "fields": {
+            "brand_name": "Peugeot"
+        }
+    },
+    {
+        "model": "vehicles.typevehicle",
+        "pk": 1,
+        "fields": {
+            "type_vehicle": "Automovil"
+        }
+    },
+    {
+        "model": "vehicles.typevehicle",
+        "pk": 2,
+        "fields": {
+            "type_vehicle": "Camioneta"
+        }
+    },
+    {
+        "model": "vehicles.typevehicle",
+        "pk": 3,
+        "fields": {
+            "type_vehicle": "Minivan"
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 1,
+        "fields": {
+            "plate": "drx1",
+            "modelo": 2018,
+            "brand": 1,
+            "type_vehicle": 1
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 2,
+        "fields": {
+            "plate": "drx2",
+            "modelo": 2019,
+            "brand": 2,
+            "type_vehicle": 2
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 3,
+        "fields": {
+            "plate": "drx3",
+            "modelo": 2015,
+            "brand": 3,
+            "type_vehicle": 3
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 4,
+        "fields": {
+            "plate": "drx4",
+            "modelo": 2019,
+            "brand": 2,
+            "type_vehicle": 3
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 5,
+        "fields": {
+            "plate": "drx5",
+            "modelo": 2022,
+            "brand": 3,
+            "type_vehicle": 2
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 6,
+        "fields": {
+            "plate": "drx6",
+            "modelo": 2018,
+            "brand": 3,
+            "type_vehicle": 1
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 7,
+        "fields": {
+            "plate": "drx7",
+            "modelo": 2019,
+            "brand": 3,
+            "type_vehicle": 1
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 8,
+        "fields": {
+            "plate": "drx8",
+            "modelo": 2020,
+            "brand": 3,
+            "type_vehicle": 1
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 9,
+        "fields": {
+            "plate": "drx9",
+            "modelo": 2021,
+            "brand": 2,
+            "type_vehicle": 1
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 10,
+        "fields": {
+            "plate": "dsa1",
+            "modelo": 2022,
+            "brand": 2,
+            "type_vehicle": 2
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 11,
+        "fields": {
+            "plate": "dsa2",
+            "modelo": 2011,
+            "brand": 2,
+            "type_vehicle": 2
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 12,
+        "fields": {
+            "plate": "dsa3",
+            "modelo": 2012,
+            "brand": 2,
+            "type_vehicle": 2
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 13,
+        "fields": {
+            "plate": "dsa4",
+            "modelo": 2013,
+            "brand": 1,
+            "type_vehicle": 3
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 14,
+        "fields": {
+            "plate": "dsa5",
+            "modelo": 2014,
+            "brand": 1,
+            "type_vehicle": 3
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 15,
+        "fields": {
+            "plate": "dsa6",
+            "modelo": 2015,
+            "brand": 1,
+            "type_vehicle": 3
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 16,
+        "fields": {
+            "plate": "dsa7",
+            "modelo": 2016,
+            "brand": 1,
+            "type_vehicle": 3
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 17,
+        "fields": {
+            "plate": "dsa8",
+            "modelo": 2017,
+            "brand": 2,
+            "type_vehicle": 1
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 18,
+        "fields": {
+            "plate": "dsa9",
+            "modelo": 2018,
+            "brand": 2,
+            "type_vehicle": 2
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 19,
+        "fields": {
+            "plate": "ddx1",
+            "modelo": 2019,
+            "brand": 3,
+            "type_vehicle": 3
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 20,
+        "fields": {
+            "plate": "ddx2",
+            "modelo": 2020,
+            "brand": 2,
+            "type_vehicle": 1
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 21,
+        "fields": {
+            "plate": "ddx3",
+            "modelo": 2021,
+            "brand": 1,
+            "type_vehicle": 2
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 22,
+        "fields": {
+            "plate": "ddx4",
+            "modelo": 2022,
+            "brand": 2,
+            "type_vehicle": 3
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 23,
+        "fields": {
+            "plate": "ddx5",
+            "modelo": 2008,
+            "brand": 3,
+            "type_vehicle": 1
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 24,
+        "fields": {
+            "plate": "ddx6",
+            "modelo": 2009,
+            "brand": 1,
+            "type_vehicle": 2
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 25,
+        "fields": {
+            "plate": "ddx7",
+            "modelo": 2010,
+            "brand": 2,
+            "type_vehicle": 3
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 26,
+        "fields": {
+            "plate": "ddx8",
+            "modelo": 2011,
+            "brand": 3,
+            "type_vehicle": 1
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 27,
+        "fields": {
+            "plate": "ddx9",
+            "modelo": 2022,
+            "brand": 2,
+            "type_vehicle": 2
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 28,
+        "fields": {
+            "plate": "dff1",
+            "modelo": 2012,
+            "brand": 1,
+            "type_vehicle": 3
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 29,
+        "fields": {
+            "plate": "dff2",
+            "modelo": 2010,
+            "brand": 3,
+            "type_vehicle": 1
+        }
+    },
+    {
+        "model": "vehicles.vehicle",
+        "pk": 30,
+        "fields": {
+            "plate": "dff3",
+            "modelo": 2013,
+            "brand": 2,
+            "type_vehicle": 2
+        }
+    }
+]

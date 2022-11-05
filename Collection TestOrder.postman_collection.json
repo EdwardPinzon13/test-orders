@@ -1,0 +1,197 @@
+{
+    "info": {
+        "_postman_id": "8c2eff65-50d0-45ce-ab21-2b10610dac38",
+        "name": "Collection TestOrder",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "13318079"
+    },
+    "item": [{
+            "name": "Anadir orden a un conductor",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "Authorization",
+                    "value": "Token f2361f32a188436fdb77f15292fe698698cdf72a",
+                    "type": "text"
+                }],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{   \"driver\": 1,\r\n    \"date\": \"2022-11-09\",\r\n    \"hour\" : \"02:03:00\",\r\n    \"pickup_place\" : {\r\n        \"lat\": 11, \r\n        \"lng\" : 11 \r\n    },\r\n    \"destination_place\" : {\r\n        \"lat\": 11, \r\n        \"lng\" : 11\r\n    }\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8000/add-order/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "add-order",
+                        ""
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "anadir orden a conductor más cercano ",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "Authorization",
+                    "value": "Token f2361f32a188436fdb77f15292fe698698cdf72a",
+                    "type": "text"
+                }],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"date\": \"2022-11-01\",\r\n    \"hour\" : \"10:45:00\",\r\n    \"pickup_place\" : {\r\n        \"lat\": 11, \r\n        \"lng\" : 11 \r\n    },\r\n    \"destination_place\" : {\r\n        \"lat\": 11, \r\n        \"lng\" : 11\r\n    }\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8000/add-order-dynamic/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "add-order-dynamic",
+                        ""
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "filters",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [{
+                    "key": "Authorization",
+                    "value": "Token f2361f32a188436fdb77f15292fe698698cdf72a",
+                    "type": "text"
+                }],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"field_filters\" : {\r\n        \"order_date\" : \"2022-10-27\",\r\n        \"driver\" : 1\r\n    }\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8000/filter-order/?date=2022-10-27&driver=2",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "filter-order",
+                        ""
+                    ],
+                    "query": [{
+                            "key": "date",
+                            "value": "2022-10-27"
+                        },
+                        {
+                            "key": "driver",
+                            "value": "2"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "filters with post",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "Authorization",
+                    "value": "Token f2361f32a188436fdb77f15292fe698698cdf72a",
+                    "type": "text"
+                }],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"field_filters\" : {\r\n        \"order_date\" : \"2022-10-27\",\r\n        \"driver\" : 1\r\n    }\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8000/filter-order/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "filter-order",
+                        ""
+                    ],
+                    "query": [{
+                            "key": "date",
+                            "value": "2022-10-27",
+                            "disabled": true
+                        },
+                        {
+                            "key": "driver",
+                            "value": "2",
+                            "disabled": true
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Driver Certain",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "Authorization",
+                    "value": "Token f2361f32a188436fdb77f15292fe698698cdf72a",
+                    "type": "text"
+                }],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"location\" : {\r\n                    \"lat\" : 10 ,\r\n                    \"lng\" : 50\r\n                 },\r\n    \"date\" : \"2022-11-03\",\r\n    \"hour\" : \"02:10:00\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8000/driver-certain/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "driver-certain",
+                        ""
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
